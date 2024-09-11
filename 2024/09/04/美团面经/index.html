@@ -19,16 +19,17 @@
   <meta name="author" content="MinGWu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="记录自己成长的心路历程与学习记录">
+    <meta name="description" content="Java后端日常实习-一面">
 <meta property="og:type" content="article">
 <meta property="og:title" content="美团面经">
 <meta property="og:url" content="https://mingwu-2000.github.io/2024/09/04/%E7%BE%8E%E5%9B%A2%E9%9D%A2%E7%BB%8F/index.html">
 <meta property="og:site_name" content="MinGWu 的秘密小屋">
-<meta property="og:description" content="记录自己成长的心路历程与学习记录">
+<meta property="og:description" content="Java后端日常实习-一面">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-09-04T08:59:55.000Z">
-<meta property="article:modified_time" content="2024-09-04T09:03:44.953Z">
+<meta property="article:modified_time" content="2024-09-11T01:07:42.511Z">
 <meta property="article:author" content="MinGWu">
+<meta property="article:tag" content="面经">
 <meta name="twitter:card" content="summary_large_image">
   
   
@@ -222,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          650 字
         
       </span>
     
@@ -233,7 +234,7 @@
         
         
         
-          1 分钟
+          6 分钟
         
       </span>
     
@@ -284,7 +285,82 @@
             
               <div class="markdown-body">
                 
-                
+                <h2 id="部门："><a href="#部门：" class="headerlink" title="部门："></a>部门：</h2><p>交易结算-上海-资金基础能力（已oc）</p>
+<h2 id="时间线："><a href="#时间线：" class="headerlink" title="时间线："></a>时间线：</h2><p>8.28 投递简历 -&gt; 8.30 一面 -&gt; 8.30 面试后45min商量offer -&gt; 9.2 正式offer</p>
+<h2 id="面试："><a href="#面试：" class="headerlink" title="面试："></a>面试：</h2><ol>
+<li><h3 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h3><ol>
+<li>做个简单的自我介绍</li>
+<li>能实习多久、最快多久能到</li>
+</ol>
+</li>
+<li><h3 id="项目相关"><a href="#项目相关" class="headerlink" title="项目相关"></a>项目相关</h3><ol>
+<li>做过哪些项目、简单介绍下简历上的两个、是单体还是微服务、项目中负责了哪些部分，都有亲自参与吗、项目有没有实际部署</li>
+<li>项目中秒杀业务用到了分布式锁和lua脚本，具体怎么用的，lua脚本中写了哪些内容，为什么这么用（举个case），为什么要保证原子性，为什么用Redission，与直接用Setnx的区别。</li>
+<li>项目中用到了mq，为什么引入mq，具体怎么用的，mq还有哪些用处？</li>
+<li>项目中还用到了redis哪些数据结构，具体怎么用的？</li>
+<li>简单介绍下第二个项目（微服务相关，应该是不感兴趣）</li>
+</ol>
+</li>
+<li><h3 id="简历相关"><a href="#简历相关" class="headerlink" title="简历相关"></a>简历相关</h3><ol>
+<li>Java基础<ol>
+<li>常用的Java集合有哪些，讲一下，底层实现（包括插入过程等），是否线程安全，哪些线程安全，实现原理</li>
+<li>Java异常了解不了解，谈一下。</li>
+</ol>
+</li>
+<li>JVM<ol>
+<li>讲一下JVM的内存结构，哪些线程共享？哪些不共享？</li>
+<li>minorgc和full gc的区别？</li>
+<li>出现OOM了怎么排查？（Jmap，Jstack）是否看过dump文件？</li>
+</ol>
+</li>
+<li>JUC<ol>
+<li>乐观锁、悲观锁</li>
+<li>CAS怎么实现</li>
+<li>volatile有什么用</li>
+<li>synchronized的锁升级具体过程</li>
+<li>创建线程池需要指定的参数</li>
+</ol>
+</li>
+<li>Spring<ol>
+<li>了解不了解dispatch serverlet</li>
+<li>mybatis有哪些常用标签</li>
+<li>#{} 与 ${}的区别</li>
+<li>spring有哪些常用标签</li>
+<li>auto wired和 resource的区别，名称注入是什么名称（类名_小写（还是驼峰？忘记了））</li>
+</ol>
+</li>
+<li>Mysql<ol>
+<li>了解不了解索引，怎么设计索引</li>
+<li>为什么用B+树做索引结构</li>
+<li>什么情况下索引失效</li>
+<li>最左匹配的时候，设计索引有哪些参考原则</li>
+<li>有没有过慢sql调优经历</li>
+<li>explain字段都了解不了解，以及关于字段的一系列引申问题</li>
+<li>手写一个sql（查询不及格学生？好像是，主要忘了还有having这个用法）</li>
+</ol>
+</li>
+<li>设计模式<ol>
+<li>了解哪些设计模式</li>
+<li>讲讲策略模式</li>
+<li>手写一个线程安全的单例模式</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><h3 id="手撕环节"><a href="#手撕环节" class="headerlink" title="手撕环节"></a>手撕环节</h3><ol>
+<li><p>三数之和</p>
+<p>题目：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/3sum/">三数之和</a></p>
+<p>比较常规，不到10min秒了</p>
+</li>
+</ol>
+</li>
+<li><h3 id="反问环节"><a href="#反问环节" class="headerlink" title="反问环节"></a>反问环节</h3><ol>
+<li>部门业务主要做什么，氛围如何</li>
+<li>听业务介绍，部门比较核心，比较担心进去后是否打杂，能否有很大成长</li>
+</ol>
+</li>
+</ol>
+
                 
               </div>
             
@@ -292,6 +368,34 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%9D%A2%E7%BB%8F/" class="category-chain-item">面经</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E9%9D%A2%E7%BB%8F/" class="print-no-link">#面经</a>
+      
+    </div>
   
 </div>
 
@@ -346,11 +450,17 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2024/09/11/%E8%AE%A1%E7%BD%91%E5%85%AB%E8%82%A1%E6%95%B4%E7%90%86/" title="计网八股整理">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">计网八股整理</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/09/04/Readme/" title="关于本博客的一些说明">
+                      <a href="/2024/09/01/Readme/" title="关于本博客的一些说明">
                         <span class="hidden-mobile">关于本博客的一些说明</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
